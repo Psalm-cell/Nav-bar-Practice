@@ -2,25 +2,20 @@
     box-sizing: border-box;
 }
 
-/* Horizontal Nav-bar */
+/* Vertical and Horizontal Nav-bar */
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
     background-color: #333;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-li {
-    float: left;
+    width: 15%;
+    height: 30%;
 }
 li a {
     display: block;
-    text-align: center;
     text-decoration: none;
     color: white;
     padding: 14px 16px;
@@ -32,7 +27,29 @@ li a:hover {
     background-color: #04AA6D;
 }
 
+div {
+    margin-left: 16%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
 /* Responsive navbar */
+@media screen and (max-width: 900px) {
+    ul {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    li a {
+        float: left;
+        padding: 15px;
+    }
+    div {margin-left: 0;}
+}
+
 @media screen and (max-width: 600px) {
-    li {float:none}
+    li a {
+        text-align: center;
+        float: none;
+    }
 }
