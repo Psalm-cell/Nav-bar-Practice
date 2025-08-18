@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Vertical and Horizontal Nav-bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #333;
+    position: fixed;
+    width: 15%;
+    height: 30%;
+}
+li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+}
+li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #04AA6D;
+}
+
+div {
+    margin-left: 16%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+/* li.dropdown {
+    display: inline-block;
+} */
+
+/* Responsive navbar */
+@media screen and (max-width: 900px) {
+    ul {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    li a {
+        float: left;
+        padding: 15px;
+    }
+    div {margin-left: 0;}
+}
+
+@media screen and (max-width: 600px) {
+    li a {
+        text-align: center;
+        float: none;
+    }
+}
